@@ -1,0 +1,38 @@
+
+
+
+
+
+lmm.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.943
+Model:                            OLS   Adj. R-squared:                  0.924
+Method:                 Least Squares   F-statistic:                     49.41
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           2.34e-07
+Time:                        17:25:01   Log-Likelihood:                 1.8920
+No. Observations:                  17   AIC:                             6.216
+Df Residuals:                      12   BIC:                             10.38
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.1597      0.075      2.121      0.055      -0.004       0.324
+RMRF           1.3212      0.184      7.170      0.000       0.920       1.723
+SMB            0.8021      0.220      3.639      0.003       0.322       1.282
+HML            0.0434      0.370      0.117      0.909      -0.762       0.849
+HZL           -1.9702      0.736     -2.676      0.020      -3.574      -0.366
+==============================================================================
+Omnibus:                        6.469   Durbin-Watson:                   2.055
+Prob(Omnibus):                  0.039   Jarque-Bera (JB):                3.584
+Skew:                          -0.884   Prob(JB):                        0.167
+Kurtosis:                       4.389   Cond. No.                         12.2
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

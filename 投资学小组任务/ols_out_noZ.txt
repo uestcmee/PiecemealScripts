@@ -1,0 +1,999 @@
+
+
+
+
+
+lmm.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.486
+Model:                            OLS   Adj. R-squared:                  0.456
+Method:                 Least Squares   F-statistic:                     16.09
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           1.73e-07
+Time:                        22:34:40   Log-Likelihood:                 16.661
+No. Observations:                  55   AIC:                            -25.32
+Df Residuals:                      51   BIC:                            -17.29
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0339      0.026      1.287      0.204      -0.019       0.087
+RMRF           1.2175      0.182      6.695      0.000       0.852       1.583
+SMB            0.7689      0.331      2.321      0.024       0.104       1.434
+HML            1.0601      0.922      1.150      0.256      -0.791       2.911
+==============================================================================
+Omnibus:                        5.368   Durbin-Watson:                   1.549
+Prob(Omnibus):                  0.068   Jarque-Bera (JB):                4.729
+Skew:                           0.714   Prob(JB):                       0.0940
+Kurtosis:                       3.162   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+hlm.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.075
+Model:                            OLS   Adj. R-squared:                  0.021
+Method:                 Least Squares   F-statistic:                     1.383
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):              0.259
+Time:                        22:34:40   Log-Likelihood:                 15.254
+No. Observations:                  55   AIC:                            -22.51
+Df Residuals:                      51   BIC:                            -14.48
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0323      0.027      1.196      0.237      -0.022       0.087
+RMRF           0.3401      0.187      1.823      0.074      -0.034       0.715
+SMB            0.3193      0.340      0.940      0.352      -0.363       1.001
+HML            0.8255      0.946      0.873      0.387      -1.073       2.724
+==============================================================================
+Omnibus:                        4.521   Durbin-Watson:                   1.553
+Prob(Omnibus):                  0.104   Jarque-Bera (JB):                3.615
+Skew:                           0.605   Prob(JB):                        0.164
+Kurtosis:                       3.338   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+hmh.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.154
+Model:                            OLS   Adj. R-squared:                  0.104
+Method:                 Least Squares   F-statistic:                     3.093
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):             0.0350
+Time:                        22:34:40   Log-Likelihood:                 12.139
+No. Observations:                  55   AIC:                            -16.28
+Df Residuals:                      51   BIC:                            -8.250
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0359      0.029      1.257      0.214      -0.021       0.093
+RMRF           0.1754      0.197      0.888      0.378      -0.221       0.572
+SMB            0.6818      0.360      1.896      0.064      -0.040       1.404
+HML            2.3233      1.001      2.321      0.024       0.314       4.333
+==============================================================================
+Omnibus:                        1.668   Durbin-Watson:                   1.478
+Prob(Omnibus):                  0.434   Jarque-Bera (JB):                0.915
+Skew:                           0.246   Prob(JB):                        0.633
+Kurtosis:                       3.398   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+hll.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.016
+Model:                            OLS   Adj. R-squared:                 -0.042
+Method:                 Least Squares   F-statistic:                    0.2697
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):              0.847
+Time:                        22:34:40   Log-Likelihood:                 7.8419
+No. Observations:                  55   AIC:                            -7.684
+Df Residuals:                      51   BIC:                            0.3455
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0522      0.031      1.689      0.097      -0.010       0.114
+RMRF           0.1287      0.213      0.603      0.549      -0.300       0.557
+SMB           -0.2097      0.389     -0.539      0.592      -0.990       0.571
+HML            0.5304      1.082      0.490      0.626      -1.642       2.703
+==============================================================================
+Omnibus:                       11.149   Durbin-Watson:                   1.340
+Prob(Omnibus):                  0.004   Jarque-Bera (JB):               11.078
+Skew:                           0.970   Prob(JB):                      0.00393
+Kurtosis:                       4.034   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+llh.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.413
+Model:                            OLS   Adj. R-squared:                  0.378
+Method:                 Least Squares   F-statistic:                     11.95
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           4.86e-06
+Time:                        22:34:40   Log-Likelihood:                 11.828
+No. Observations:                  55   AIC:                            -15.66
+Df Residuals:                      51   BIC:                            -7.626
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0422      0.029      1.468      0.148      -0.016       0.100
+RMRF           1.1701      0.199      5.893      0.000       0.771       1.569
+SMB            0.5569      0.362      1.540      0.130      -0.169       1.283
+HML            1.4824      1.007      1.473      0.147      -0.538       3.503
+==============================================================================
+Omnibus:                        6.128   Durbin-Watson:                   1.517
+Prob(Omnibus):                  0.047   Jarque-Bera (JB):                5.096
+Skew:                           0.642   Prob(JB):                       0.0782
+Kurtosis:                       3.760   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+lml.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.464
+Model:                            OLS   Adj. R-squared:                  0.432
+Method:                 Least Squares   F-statistic:                     14.71
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           5.00e-07
+Time:                        22:34:40   Log-Likelihood:                 12.577
+No. Observations:                  55   AIC:                            -17.15
+Df Residuals:                      51   BIC:                            -9.124
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0375      0.028      1.323      0.192      -0.019       0.094
+RMRF           1.2189      0.196      6.223      0.000       0.826       1.612
+SMB            0.8845      0.357      2.480      0.017       0.168       1.601
+HML            0.3548      0.993      0.357      0.722      -1.639       2.348
+==============================================================================
+Omnibus:                        6.669   Durbin-Watson:                   1.335
+Prob(Omnibus):                  0.036   Jarque-Bera (JB):                5.941
+Skew:                           0.788   Prob(JB):                       0.0513
+Kurtosis:                       3.332   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+lmh.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.476
+Model:                            OLS   Adj. R-squared:                  0.445
+Method:                 Least Squares   F-statistic:                     15.45
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           2.82e-07
+Time:                        22:34:40   Log-Likelihood:                 14.943
+No. Observations:                  55   AIC:                            -21.89
+Df Residuals:                      51   BIC:                            -13.86
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0325      0.027      1.197      0.237      -0.022       0.087
+RMRF           1.2203      0.188      6.505      0.000       0.844       1.597
+SMB            0.8618      0.342      2.522      0.015       0.176       1.548
+HML            1.2668      0.951      1.332      0.189      -0.643       3.176
+==============================================================================
+Omnibus:                       10.059   Durbin-Watson:                   1.550
+Prob(Omnibus):                  0.007   Jarque-Bera (JB):                9.742
+Skew:                           0.878   Prob(JB):                      0.00767
+Kurtosis:                       4.080   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+lll.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.493
+Model:                            OLS   Adj. R-squared:                  0.464
+Method:                 Least Squares   F-statistic:                     16.55
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           1.22e-07
+Time:                        22:34:41   Log-Likelihood:                 13.252
+No. Observations:                  55   AIC:                            -18.50
+Df Residuals:                      51   BIC:                            -10.47
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0243      0.028      0.866      0.390      -0.032       0.081
+RMRF           1.2956      0.193      6.697      0.000       0.907       1.684
+SMB            0.6900      0.352      1.958      0.056      -0.017       1.397
+HML            0.0835      0.981      0.085      0.933      -1.886       2.053
+==============================================================================
+Omnibus:                       12.726   Durbin-Watson:                   1.423
+Prob(Omnibus):                  0.002   Jarque-Bera (JB):               15.273
+Skew:                           0.888   Prob(JB):                     0.000483
+Kurtosis:                       4.873   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+hlh.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.054
+Model:                            OLS   Adj. R-squared:                 -0.002
+Method:                 Least Squares   F-statistic:                    0.9633
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):              0.417
+Time:                        22:34:41   Log-Likelihood:                 17.448
+No. Observations:                  55   AIC:                            -26.90
+Df Residuals:                      51   BIC:                            -18.87
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0509      0.026      1.961      0.055      -0.001       0.103
+RMRF           0.1565      0.179      0.873      0.387      -0.203       0.516
+SMB            0.3551      0.327      1.088      0.282      -0.300       1.011
+HML            1.0748      0.909      1.183      0.242      -0.750       2.899
+==============================================================================
+Omnibus:                        7.473   Durbin-Watson:                   1.579
+Prob(Omnibus):                  0.024   Jarque-Bera (JB):                6.561
+Skew:                           0.777   Prob(JB):                       0.0376
+Kurtosis:                       3.668   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+hml.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.196
+Model:                            OLS   Adj. R-squared:                  0.149
+Method:                 Least Squares   F-statistic:                     4.144
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):             0.0105
+Time:                        22:34:41   Log-Likelihood:                 12.965
+No. Observations:                  55   AIC:                            -17.93
+Df Residuals:                      51   BIC:                            -9.900
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0161      0.028      0.573      0.569      -0.040       0.073
+RMRF           0.4698      0.194      2.416      0.019       0.079       0.860
+SMB            0.9757      0.354      2.754      0.008       0.265       1.687
+HML            0.6649      0.986      0.674      0.503      -1.315       2.644
+==============================================================================
+Omnibus:                        5.429   Durbin-Watson:                   1.395
+Prob(Omnibus):                  0.066   Jarque-Bera (JB):                4.624
+Skew:                           0.696   Prob(JB):                       0.0990
+Kurtosis:                       3.286   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+hmm.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.178
+Model:                            OLS   Adj. R-squared:                  0.129
+Method:                 Least Squares   F-statistic:                     3.677
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):             0.0179
+Time:                        22:34:41   Log-Likelihood:                 16.612
+No. Observations:                  55   AIC:                            -25.22
+Df Residuals:                      51   BIC:                            -17.20
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0315      0.026      1.195      0.238      -0.021       0.084
+RMRF           0.2454      0.182      1.348      0.184      -0.120       0.611
+SMB            1.0086      0.331      3.042      0.004       0.343       1.674
+HML            0.8546      0.923      0.926      0.359      -0.998       2.707
+==============================================================================
+Omnibus:                        6.254   Durbin-Watson:                   1.489
+Prob(Omnibus):                  0.044   Jarque-Bera (JB):                5.661
+Skew:                           0.780   Prob(JB):                       0.0590
+Kurtosis:                       3.199   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+llm.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.501
+Model:                            OLS   Adj. R-squared:                  0.472
+Method:                 Least Squares   F-statistic:                     17.06
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           8.38e-08
+Time:                        22:34:41   Log-Likelihood:                 13.616
+No. Observations:                  55   AIC:                            -19.23
+Df Residuals:                      51   BIC:                            -11.20
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0301      0.028      1.083      0.284      -0.026       0.086
+RMRF           1.3290      0.192      6.915      0.000       0.943       1.715
+SMB            0.7252      0.350      2.072      0.043       0.022       1.428
+HML            0.7236      0.974      0.743      0.461      -1.233       2.680
+==============================================================================
+Omnibus:                        7.033   Durbin-Watson:                   1.378
+Prob(Omnibus):                  0.030   Jarque-Bera (JB):                6.320
+Skew:                           0.810   Prob(JB):                       0.0424
+Kurtosis:                       3.363   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+mmm.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.361
+Model:                            OLS   Adj. R-squared:                  0.323
+Method:                 Least Squares   F-statistic:                     9.585
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           4.00e-05
+Time:                        22:34:41   Log-Likelihood:                 15.672
+No. Observations:                  55   AIC:                            -23.34
+Df Residuals:                      51   BIC:                            -15.31
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0208      0.027      0.776      0.441      -0.033       0.075
+RMRF           0.9403      0.185      5.079      0.000       0.569       1.312
+SMB            0.7208      0.337      2.137      0.037       0.044       1.398
+HML            1.2354      0.939      1.316      0.194      -0.649       3.120
+==============================================================================
+Omnibus:                        7.786   Durbin-Watson:                   1.575
+Prob(Omnibus):                  0.020   Jarque-Bera (JB):                6.901
+Skew:                           0.781   Prob(JB):                       0.0317
+Kurtosis:                       3.758   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+mlh.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.289
+Model:                            OLS   Adj. R-squared:                  0.248
+Method:                 Least Squares   F-statistic:                     6.922
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           0.000536
+Time:                        22:34:41   Log-Likelihood:                 15.147
+No. Observations:                  55   AIC:                            -22.29
+Df Residuals:                      51   BIC:                            -14.26
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0327      0.027      1.206      0.233      -0.022       0.087
+RMRF           0.8416      0.187      4.502      0.000       0.466       1.217
+SMB            0.2618      0.340      0.769      0.445      -0.422       0.945
+HML            1.6457      0.948      1.737      0.088      -0.257       3.548
+==============================================================================
+Omnibus:                        5.604   Durbin-Watson:                   1.478
+Prob(Omnibus):                  0.061   Jarque-Bera (JB):                4.698
+Skew:                           0.690   Prob(JB):                       0.0955
+Kurtosis:                       3.385   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+mml.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.316
+Model:                            OLS   Adj. R-squared:                  0.275
+Method:                 Least Squares   F-statistic:                     7.841
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           0.000213
+Time:                        22:34:41   Log-Likelihood:                 12.050
+No. Observations:                  55   AIC:                            -16.10
+Df Residuals:                      51   BIC:                            -8.071
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0384      0.029      1.342      0.186      -0.019       0.096
+RMRF           0.8967      0.198      4.534      0.000       0.500       1.294
+SMB            0.7509      0.360      2.085      0.042       0.028       1.474
+HML            0.9590      1.003      0.957      0.343      -1.054       2.972
+==============================================================================
+Omnibus:                        7.284   Durbin-Watson:                   1.475
+Prob(Omnibus):                  0.026   Jarque-Bera (JB):                6.382
+Skew:                           0.780   Prob(JB):                       0.0411
+Kurtosis:                       3.593   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+mmh.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.352
+Model:                            OLS   Adj. R-squared:                  0.314
+Method:                 Least Squares   F-statistic:                     9.235
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           5.56e-05
+Time:                        22:34:41   Log-Likelihood:                 14.538
+No. Observations:                  55   AIC:                            -21.08
+Df Residuals:                      51   BIC:                            -13.05
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0258      0.027      0.944      0.350      -0.029       0.081
+RMRF           0.9212      0.189      4.874      0.000       0.542       1.301
+SMB            0.8079      0.344      2.347      0.023       0.117       1.499
+HML            1.5006      0.958      1.566      0.124      -0.423       3.424
+==============================================================================
+Omnibus:                        8.777   Durbin-Watson:                   1.372
+Prob(Omnibus):                  0.012   Jarque-Bera (JB):                8.097
+Skew:                           0.878   Prob(JB):                       0.0175
+Kurtosis:                       3.670   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+mll.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.210
+Model:                            OLS   Adj. R-squared:                  0.164
+Method:                 Least Squares   F-statistic:                     4.529
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):            0.00685
+Time:                        22:34:41   Log-Likelihood:                 3.4299
+No. Observations:                  55   AIC:                             1.140
+Df Residuals:                      51   BIC:                             9.170
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0388      0.033      1.159      0.252      -0.028       0.106
+RMRF           0.8054      0.231      3.482      0.001       0.341       1.270
+SMB            0.6265      0.421      1.487      0.143      -0.219       1.472
+HML            0.8543      1.173      0.729      0.470      -1.500       3.208
+==============================================================================
+Omnibus:                       18.641   Durbin-Watson:                   1.647
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               23.487
+Skew:                           1.328   Prob(JB):                     7.94e-06
+Kurtosis:                       4.788   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+mlm.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.285
+Model:                            OLS   Adj. R-squared:                  0.243
+Method:                 Least Squares   F-statistic:                     6.790
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           0.000613
+Time:                        22:34:41   Log-Likelihood:                 8.6101
+No. Observations:                  55   AIC:                            -9.220
+Df Residuals:                      51   BIC:                            -1.191
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0332      0.030      1.088      0.282      -0.028       0.094
+RMRF           0.9370      0.211      4.451      0.000       0.514       1.360
+SMB            0.4163      0.383      1.086      0.283      -0.353       1.186
+HML            1.0132      1.067      0.949      0.347      -1.129       3.156
+==============================================================================
+Omnibus:                        8.774   Durbin-Watson:                   1.424
+Prob(Omnibus):                  0.012   Jarque-Bera (JB):                8.145
+Skew:                           0.894   Prob(JB):                       0.0170
+Kurtosis:                       3.599   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+lhh.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.507
+Model:                            OLS   Adj. R-squared:                  0.478
+Method:                 Least Squares   F-statistic:                     17.50
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           6.08e-08
+Time:                        22:34:41   Log-Likelihood:                 10.841
+No. Observations:                  55   AIC:                            -13.68
+Df Residuals:                      51   BIC:                            -5.653
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0410      0.029      1.400      0.168      -0.018       0.100
+RMRF           1.3419      0.202      6.639      0.000       0.936       1.748
+SMB            1.2600      0.368      3.422      0.001       0.521       1.999
+HML            2.0267      1.025      1.978      0.053      -0.031       4.084
+==============================================================================
+Omnibus:                        4.665   Durbin-Watson:                   1.512
+Prob(Omnibus):                  0.097   Jarque-Bera (JB):                4.168
+Skew:                           0.674   Prob(JB):                        0.124
+Kurtosis:                       3.033   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+hhl.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.307
+Model:                            OLS   Adj. R-squared:                  0.267
+Method:                 Least Squares   F-statistic:                     7.546
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           0.000285
+Time:                        22:34:41   Log-Likelihood:                 15.425
+No. Observations:                  55   AIC:                            -22.85
+Df Residuals:                      51   BIC:                            -14.82
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0355      0.027      1.316      0.194      -0.019       0.090
+RMRF           0.1552      0.186      0.835      0.408      -0.218       0.529
+SMB            1.5982      0.339      4.718      0.000       0.918       2.278
+HML            0.3591      0.943      0.381      0.705      -1.534       2.252
+==============================================================================
+Omnibus:                        6.052   Durbin-Watson:                   1.565
+Prob(Omnibus):                  0.049   Jarque-Bera (JB):                5.113
+Skew:                           0.593   Prob(JB):                       0.0776
+Kurtosis:                       3.908   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+hhm.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.372
+Model:                            OLS   Adj. R-squared:                  0.335
+Method:                 Least Squares   F-statistic:                     10.05
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           2.60e-05
+Time:                        22:34:41   Log-Likelihood:                 21.918
+No. Observations:                  55   AIC:                            -35.84
+Df Residuals:                      51   BIC:                            -27.81
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0261      0.024      1.091      0.281      -0.022       0.074
+RMRF           0.2192      0.165      1.327      0.191      -0.113       0.551
+SMB            1.6217      0.301      5.387      0.000       1.017       2.226
+HML            0.5389      0.838      0.643      0.523      -1.143       2.221
+==============================================================================
+Omnibus:                        4.149   Durbin-Watson:                   1.535
+Prob(Omnibus):                  0.126   Jarque-Bera (JB):                3.212
+Skew:                           0.562   Prob(JB):                        0.201
+Kurtosis:                       3.371   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+lhm.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.481
+Model:                            OLS   Adj. R-squared:                  0.450
+Method:                 Least Squares   F-statistic:                     15.73
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           2.27e-07
+Time:                        22:34:41   Log-Likelihood:                 14.014
+No. Observations:                  55   AIC:                            -20.03
+Df Residuals:                      51   BIC:                            -12.00
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0396      0.028      1.434      0.158      -0.016       0.095
+RMRF           1.1797      0.191      6.183      0.000       0.797       1.563
+SMB            1.1958      0.348      3.441      0.001       0.498       1.894
+HML            0.8910      0.967      0.921      0.361      -1.051       2.833
+==============================================================================
+Omnibus:                        9.225   Durbin-Watson:                   1.520
+Prob(Omnibus):                  0.010   Jarque-Bera (JB):                8.650
+Skew:                           0.912   Prob(JB):                       0.0132
+Kurtosis:                       3.669   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+hhh.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.249
+Model:                            OLS   Adj. R-squared:                  0.205
+Method:                 Least Squares   F-statistic:                     5.649
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):            0.00202
+Time:                        22:34:41   Log-Likelihood:                -1.3201
+No. Observations:                  55   AIC:                             10.64
+Df Residuals:                      51   BIC:                             18.67
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0445      0.037      1.220      0.228      -0.029       0.118
+RMRF           0.2991      0.252      1.186      0.241      -0.207       0.805
+SMB            1.7887      0.459      3.894      0.000       0.867       2.711
+HML            1.3922      1.278      1.089      0.281      -1.174       3.959
+==============================================================================
+Omnibus:                       18.541   Durbin-Watson:                   1.440
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               23.077
+Skew:                           1.341   Prob(JB):                     9.75e-06
+Kurtosis:                       4.697   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+lhl.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.475
+Model:                            OLS   Adj. R-squared:                  0.444
+Method:                 Least Squares   F-statistic:                     15.38
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           2.98e-07
+Time:                        22:34:41   Log-Likelihood:                 12.871
+No. Observations:                  55   AIC:                            -17.74
+Df Residuals:                      51   BIC:                            -9.713
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0490      0.028      1.735      0.089      -0.008       0.106
+RMRF           1.1923      0.195      6.120      0.000       0.801       1.583
+SMB            1.1565      0.355      3.259      0.002       0.444       1.869
+HML            0.4840      0.988      0.490      0.626      -1.499       2.467
+==============================================================================
+Omnibus:                        4.897   Durbin-Watson:                   1.578
+Prob(Omnibus):                  0.086   Jarque-Bera (JB):                4.047
+Skew:                           0.648   Prob(JB):                        0.132
+Kurtosis:                       3.297   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+mhh.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.345
+Model:                            OLS   Adj. R-squared:                  0.307
+Method:                 Least Squares   F-statistic:                     8.971
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           7.13e-05
+Time:                        22:34:41   Log-Likelihood:                 7.8722
+No. Observations:                  55   AIC:                            -7.744
+Df Residuals:                      51   BIC:                            0.2849
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0273      0.031      0.883      0.382      -0.035       0.089
+RMRF           0.8937      0.213      4.189      0.000       0.465       1.322
+SMB            1.3150      0.389      3.384      0.001       0.535       2.095
+HML            1.3417      1.082      1.240      0.221      -0.830       3.513
+==============================================================================
+Omnibus:                       13.654   Durbin-Watson:                   1.305
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               14.687
+Skew:                           1.099   Prob(JB):                     0.000647
+Kurtosis:                       4.256   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+mhm.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.429
+Model:                            OLS   Adj. R-squared:                  0.395
+Method:                 Least Squares   F-statistic:                     12.78
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           2.41e-06
+Time:                        22:34:41   Log-Likelihood:                 15.154
+No. Observations:                  55   AIC:                            -22.31
+Df Residuals:                      51   BIC:                            -14.28
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0253      0.027      0.934      0.354      -0.029       0.080
+RMRF           0.9014      0.187      4.823      0.000       0.526       1.277
+SMB            1.4485      0.340      4.255      0.000       0.765       2.132
+HML            0.7195      0.948      0.759      0.451      -1.183       2.622
+==============================================================================
+Omnibus:                        5.184   Durbin-Watson:                   1.463
+Prob(Omnibus):                  0.075   Jarque-Bera (JB):                4.299
+Skew:                           0.663   Prob(JB):                        0.117
+Kurtosis:                       3.340   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+
+
+
+mhl.csv
+
+
+
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   RTRF   R-squared:                       0.389
+Model:                            OLS   Adj. R-squared:                  0.353
+Method:                 Least Squares   F-statistic:                     10.83
+Date:                Wed, 07 Nov 2018   Prob (F-statistic):           1.29e-05
+Time:                        22:34:41   Log-Likelihood:                 13.866
+No. Observations:                  55   AIC:                            -19.73
+Df Residuals:                      51   BIC:                            -11.70
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.0448      0.028      1.618      0.112      -0.011       0.100
+RMRF           0.8390      0.191      4.385      0.000       0.455       1.223
+SMB            1.3861      0.348      3.978      0.000       0.687       2.086
+HML            0.6197      0.970      0.639      0.526      -1.328       2.567
+==============================================================================
+Omnibus:                        6.506   Durbin-Watson:                   1.446
+Prob(Omnibus):                  0.039   Jarque-Bera (JB):                5.528
+Skew:                           0.723   Prob(JB):                       0.0630
+Kurtosis:                       3.566   Cond. No.                         36.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
