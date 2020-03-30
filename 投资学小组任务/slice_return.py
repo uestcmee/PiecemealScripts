@@ -5,7 +5,7 @@ from pandas.io.stata import StataReader
 infilename = r"merge_2.dta"
 
 outfile = 'out.csv'
-if raw_input('are you sure to clear outputfile>>'+outfile+'<<(y/n)?')=='y':
+if input('are you sure to clear outputfile>>'+outfile+'<<(y/n)?')=='y':
     open(outfile,'w').close()
 stata_data = StataReader(infilename, convert_categoricals=False)
 data = stata_data.read()
@@ -53,7 +53,7 @@ for year in range(start_year,stop_year):
                 wei_rt=(need_stk['size']*need_stk['rt_year']).sum(0)/float(need_stk.sum(0)['size'])
                 # print need_stk['size']*need_stk['rt_year']
                 # print need_stk.sum(0)
-                print year,str_list[i],str_list[j],'weighted_return=',wei_rt
+                print(year,str_list[i],str_list[j],'weighted_return=',wei_rt)
                 outstring=','.join([str(year),str_list[i],str_list[j],str(wei_rt)])+'\n'
                 output(outstring)
 

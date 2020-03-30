@@ -1,4 +1,4 @@
-f=open('out2.csv','r')
+f=open('data/out2.csv', 'r')
 
 lines=f.readlines()
 info_list=[]

@@ -6,13 +6,13 @@ rf = [0, 0.006149, 0.006795, 0.006211, 0.005487, 0.002862, 0.002777, 0.003651, 0
       0.009168, 0.007838, 0.007702, 0.007386, 0.007273, 0.007079, 0.007416, 0.010127, 0.011172, 0.010847, 0.01147,
       0.011746, 0.010484, 0.007779, 0.007099]
 data_list = []
-data_file = 'out3.csv'
+data_file = 'data/out3.csv'
 data_lines = open(data_file).readlines()
 for data_line in data_lines[1:]:
     data_infos = data_line.strip().split(',')
     data_list.append(data_infos)
 
-sample_file = 'sample1.csv'
+sample_file = 'data/sample1.csv'
 lines = open(sample_file).readlines()
 
 hml = ['h', 'm', 'l']

@@ -5,7 +5,7 @@ from pandas.io.stata import StataReader
 
 infilename = r"merge_zscore.dta"
 outfile = 'out2.csv'
-if raw_input('are you sure to clear outputfile>>  '+outfile+'  <<(y/n)?')=='y':
+if input('are you sure to clear outputfile>>  '+outfile+'  <<(y/n)?')=='y':
 # if True:
     open(outfile,'w').close()
 
@@ -16,7 +16,7 @@ data = pd.DataFrame(data)
 col_n=['stkcd','time','rt_year','z_score','lnme','lnbm','size']
 data = pd.DataFrame(data,columns = col_n)
 data = data.dropna(axis=0)
-print data.sort_values(by='time')
+print(data.sort_values(by='time'))
 
 
 
@@ -50,9 +50,9 @@ stop_year=2018
 for year in range(start_year,stop_year):
     for half in range(4):
         timestring=str(year)+'-'+str((half+1)*3)
-        print 'timestring',timestring
+        print('timestring',timestring)
         df_year=data[data.time==timestring]
-        print df_year
+        print(df_year)
         if year != start_year:
             slice_list = dic[year*4+half-1]
             str_list=['h','m','l']
@@ -69,7 +69,7 @@ for year in range(start_year,stop_year):
                         wei_rt=(need_stk['size']*need_stk['rt_year']).sum(0)/float(need_stk.sum(0)['size'])
                         # print need_stk['size']*need_stk['rt_year']
                         # print need_stk.sum(0)
-                        print year,str_list[i],str_list[j],str_list[k],'weighted_return=',wei_rt
+                        print(year,str_list[i],str_list[j],str_list[k],'weighted_return=',wei_rt)
                         outstring=','.join([str(year),str_list[i],str_list[j],str_list[k],str(wei_rt)])+'\n'
                         output(outstring)
 

@@ -15,13 +15,13 @@ for file in files:
         pass
     else:
         continue
-    print file
+    print(file)
     infilename = str(file)
     data = read_csv(path + infilename)
     data = data.dropna(axis=0)
     est = smf.ols(formula='RTRF ~ RMRF + SMB + HML + HZL ', data=data)
     res = est.fit()
-    print res.summary()
+    print(res.summary())
     with open(out_file, 'a') as f:
         f.write('\n'*5+str(file) + '\n'*5)
         f.write(str(res.summary()) + '\n')
