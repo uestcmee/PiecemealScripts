@@ -5,33 +5,47 @@ import os
 import windnd
 from PyPDF3 import PdfFileReader
 from PyPDF3 import PdfFileWriter
+import traceback
+import os.path
 
 
+
+def write_result(str1,str2):
+    global result,result2
+    result.insert(END, str1+ '\n')
+    result2.insert(END, str2 + '\n')
+
+# 读取文件
 def get_reader(filename, password):
+    global old_file
     try:
         old_file = open(filename, 'rb')
     except Exception as err:
         print('文件打开失败！' + str(err))
+        write_result(filename,'文件打开失败')
         return None
 
     # 创建读实例
-    pdf_reader = PdfFileReader(old_file, strict=False)
 
+    pdf_reader = PdfFileReader(old_file, strict=False)
     # 解密操作
     if pdf_reader.isEncrypted:
         if password is None:
             print('%s文件被加密，需要密码！' % filename)
+            write_result(filename, '文件需要密码')
             return None
         else:
             if pdf_reader.decrypt(password) != 1:
                 print('%s密码不正确！' % filename)
                 return None
-    if old_file in locals():
-        old_file.close()
+    # if 'old_file' in locals(): # 这句话需要使用字符串格式，否则无法关闭文件
+    #     old_file.close()
     return pdf_reader
 
 
+# 进行解密
 def decrypt_pdf(filename, password, decrypted_filename=None):
+    global old_file
     """
     将加密的文件及逆行解密，并生成一个无需密码pdf文件
     :param filename: 原先加密的pdf文件
@@ -42,16 +56,30 @@ def decrypt_pdf(filename, password, decrypted_filename=None):
     # 生成一个Reader和Writer
     pdf_reader = get_reader(filename, password)
     if pdf_reader is None:
+        write_result(filename, '文件打开失败')
         return '出错'
     if not pdf_reader.isEncrypted:
         print('文件没有被加密，无需操作！')
-        return '文件没有被加密，无需操作！'
+        return '未加密，无需操作！'
     pdf_writer = PdfFileWriter()
     pdf_writer.appendPagesFromReader(pdf_reader)
+    # decrypted_filename=filename
     if decrypted_filename is None:
         decrypted_filename =  "".join(filename[:-4])+'_'+ 'decrypted' + '.pdf'
     # 写入新文件
     pdf_writer.write(open(decrypted_filename, 'wb'))
+    file_name = re.split('\\\|/',filename)[-1]
+
+    old_file.close()
+
+    try:
+        os.remove(filename)
+        os.rename(decrypted_filename,filename)
+        write_result(file_name, '已覆盖旧文件')
+    except:
+        traceback.print_exc()
+        write_result(file_name,'删除旧文件失败')
+
     print('解密完成，新文件存储至'+decrypted_filename)
     return '解密完成'
 
@@ -70,7 +98,7 @@ def drop(files):
             result.insert(END, file_name+ '\n')
             continue
         elif ' ' in file:
-            result2.insert(END,'名称含空格，将改名'+'\n')
+            result2.insert(END,'含空格，已改名'+'\n')
             result.insert(END, file_name+'\n')
             os.rename(file,file.replace(' ','_'))
             file=file.replace(' ','_')
@@ -86,6 +114,7 @@ def drop(files):
 # 打开选中的文件
 def open_file():
     result.delete(0,END)
+    result2.delete(0, END)
     file_names=list(set([lb.get(i) for i in range(lb.size())])) # 列表中的文件名，去重
     if len(file_names)==0:
         result.insert(END, '无文件，请添加文件\n')
@@ -93,16 +122,22 @@ def open_file():
         print (file_name)
         file_name=file_name.replace('\\','/')
         file=file_name.split('/')[-1]
+
         result2.insert(END,'开始解密'+'\n')
         result.insert(END, file+'\n')
 
+        # 解密函数
         words=decrypt_pdf(file_name,'')
         result2.insert(END,words+'\n')
         result.insert(END, file+'\n')
+    lb.delete(0, END) # 清空上文中的待解密文件
 
 
+# 清空内容
 def clear():
     result.delete(0, END)
+    result2.delete(0, END)
+
     lb.delete(0,END)
 
 
