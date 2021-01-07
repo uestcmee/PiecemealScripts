@@ -123,11 +123,16 @@ def open_file():
         file_name=file_name.replace('\\','/')
         file=file_name.split('/')[-1]
 
-        result2.insert(END,'开始解密'+'\n')
-        result.insert(END, file+'\n')
+        # result2.insert(END,'开始解密'+'\n')
+        # result.insert(END, file+'\n')
 
         # 解密函数
-        words=decrypt_pdf(file_name,'')
+        try:
+            words=decrypt_pdf(file_name,'')
+        except:
+            words='解密失败'
+            pass
+
         result2.insert(END,words+'\n')
         result.insert(END, file+'\n')
     lb.delete(0, END) # 清空上文中的待解密文件
@@ -137,7 +142,6 @@ def open_file():
 def clear():
     result.delete(0, END)
     result2.delete(0, END)
-
     lb.delete(0,END)
 
 
